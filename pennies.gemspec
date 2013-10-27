@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jiri Zajpt"]
-  s.date = "2011-11-09"
+  s.date = "2013-10-26"
   s.description = "Pennies handles your money and currency needs. Support Mongoid and MongoMapper."
   s.email = "jzajpt@blueberry.cz"
   s.extra_rdoc_files = [
@@ -27,30 +27,27 @@ Gem::Specification.new do |s|
   ]
   s.homepage = "http://github.com/jzajpt/pennies"
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.24"
   s.summary = "Money and Currency handling library."
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<activesupport>, ["~> 3.0"])
-      s.add_runtime_dependency(%q<activemodel>, ["~> 3.0"])
-      s.add_runtime_dependency(%q<mongoid>, [">= 0"])
-      s.add_runtime_dependency(%q<bson>, [">= 0"])
+      s.add_runtime_dependency(%q<activesupport>, ["~> 3.2"])
+      s.add_runtime_dependency(%q<activemodel>, ["~> 3.2"])
+      s.add_runtime_dependency(%q<mongoid>, ["~> 3.0"])
       s.add_development_dependency(%q<rspec>, ["~> 2.1.0"])
     else
-      s.add_dependency(%q<activesupport>, ["~> 3.0"])
-      s.add_dependency(%q<activemodel>, ["~> 3.0"])
-      s.add_dependency(%q<mongoid>, [">= 0"])
-      s.add_dependency(%q<bson>, [">= 0"])
+      s.add_dependency(%q<activesupport>, ["~> 3.2"])
+      s.add_dependency(%q<activemodel>, ["~> 3.2"])
+      s.add_dependency(%q<mongoid>, ["~> 3.0"])
       s.add_dependency(%q<rspec>, ["~> 2.1.0"])
     end
   else
-    s.add_dependency(%q<activesupport>, ["~> 3.0"])
-    s.add_dependency(%q<activemodel>, ["~> 3.0"])
-    s.add_dependency(%q<mongoid>, [">= 0"])
-    s.add_dependency(%q<bson>, [">= 0"])
+    s.add_dependency(%q<activesupport>, ["~> 3.2"])
+    s.add_dependency(%q<activemodel>, ["~> 3.2"])
+    s.add_dependency(%q<mongoid>, ["~> 3.0"])
     s.add_dependency(%q<rspec>, ["~> 2.1.0"])
   end
 end

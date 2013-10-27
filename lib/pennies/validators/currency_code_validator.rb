@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+require "active_model"
+
 class CurrencyCodeValidator < ActiveModel::EachValidator
 
   ISO_4217_CODES = %w(
